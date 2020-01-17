@@ -49,8 +49,41 @@ table {
 
 * {
     box-sizing: border-box;
+    
 }
 
+nav {
+	display:flex;
+    justify-content: center;
+    align-content: space-between;
+    width:100%;
+   
+    
+}
+.logo {
+    padding:0 2%;
+    display:flex;
+    margin:10px 0;
+   
+}
+.links {
+    width:70%;
+	text-align: center;
+	padding-top: 30px;
+	display:flex;
+    justify-content: space-between;
+
+
+}
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.box img {
+    width:85%;
+  }
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
@@ -67,7 +100,7 @@ p {
 }
 
 .container {
-    width: 800px;
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -80,14 +113,16 @@ p {
 }
 
 .top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
+    width: 50%;
+    padding: 2% 5%;
     padding-bottom: 20px;  
 }
 
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    width:88%;
+    margin: 0 auto;
 }
 
 .middle-content h2 {
@@ -114,12 +149,13 @@ p {
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
     justify-content: space-around;
+    width:93%;
+    margin: 0 auto;
 }
 
 .bottom-content .text-container {
-    padding-right: 4%;
+    padding: 2% 5%;
 }
 
 .bottom-content .text-container:last-child {
@@ -129,6 +165,10 @@ p {
 footer {
     width: 100%;
     background: black;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 footer nav {
