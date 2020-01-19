@@ -84,7 +84,7 @@ nav {
 
 }
 .box img {
-    width:85%;
+    width:83%;
   }
 html, body {
     height: 100%;
@@ -114,14 +114,15 @@ p {
 }
 
 .top-content .text-container {
-    width: 40%;
-    padding-bottom: 1px;  
+    width: 500px;
+    text-align:left;
+	line-height: 2; 
 }
 
 .middle-content {
     margin-bottom: 5px;
     border-bottom: 1px dashed black;
-    width:100%;
+    width:92%;
     margin: 0 auto;
 }
 
@@ -261,7 +262,6 @@ p {
     width: 350px;
     text-align:left;
 	line-height: 2;
-
 }
 
 
@@ -269,17 +269,17 @@ footer {
     background: black;
     display:flex;
     align-content: flex-start;
-    margin: 0 5%;
+    margin: 0 1%;
 }
 .homeFooter { 
-    width:80%;
+    width:100%;
     display:flex;
     justify-content: space-evenly;
     padding: 25px;
 
 }
 footer nav {
-    width: 100%;
+    width: 85%;
     font-size: 14px;
     
 }
