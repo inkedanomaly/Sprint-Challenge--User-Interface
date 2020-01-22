@@ -310,14 +310,17 @@ footer nav {
 }
 
 .container2 div{
-    padding:1% 2%;
+    padding:0 2%;
+    padding-bottom: 2%;
     width:85%;
     border-bottom: 1px dashed black;
 }
 .container2 p {
     font-size:20px;
     line-height: 1.5;
-    
+}
+.container2 h2 {
+    font-size:21px;
 }
 /*END CONTAINER2 STYLING*/
 /*BEGIN CONTAINER3 STYLING*/
@@ -340,7 +343,9 @@ h4 {
     flex-wrap:wrap;
     margin:auto;
     }
-    
+.container3 h3 {
+    font-size:21px;
+}
 .cont3Img {
     display:flex;
     justify-content: center;
@@ -370,13 +375,16 @@ h4 {
 }
 
 .container4 div{
-    padding:1% 2%;
+    padding:0 2%;
+    padding-bottom: 1%;
     width:85%;
 }
 .container4 p {
     font-size:20px;
     line-height: 1.5;
 }
-
+.container4 h3 {
+    font-size:21px;
+}
 /*END CONTAINER4 STYLING*/
 /*END ABOUT PAGE STYING*/
