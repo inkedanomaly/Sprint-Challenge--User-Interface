@@ -16,18 +16,12 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+
 body {
 	line-height: 1;
 }
@@ -49,7 +43,7 @@ table {
 /*BEGIN HTML BODY STYLING*/
 * {
     box-sizing: border-box;
-    padding:0
+    padding:0;
     margin:0;
     max-width: 100%;
 }
@@ -78,7 +72,10 @@ p {
 }
 /*END HTML BODY STYLING*/
 
-/*BEGIN HEADER STYLING*/
+/*BEGIN NAV STYLING*/
+header {
+    height:15vh;
+}
 nav {
     display:flex;
     justify-content:center;
@@ -89,7 +86,6 @@ nav {
     margin: auto;
     padding-top:1%;
     padding-left: 7%;
-   
 }    
 
 .linksHeader {
@@ -98,7 +94,12 @@ nav {
     display:flex;
     justify-content:space-evenly;
 }
-
+nav a{
+    color: black;
+	text-decoration: none;
+}
+/*THIS CLOSES NAV STYLING*/
+/*THIS OPENS MAIN BACKGROUND IMAGE STYLING */
 .box {
     display: flex;
     align-items: center;
@@ -108,6 +109,7 @@ nav {
 .box img {
     width:85%;
 }
+/*THIS CLOSES MAIN BACKGROUND IMAGE STYLING *?
 /*END HEADER STYLING*/
 
 /*BEGIN TOP CONTENT STYLING*/
@@ -285,61 +287,45 @@ footer {
 }
 footer nav a {
     color: white; 
+    padding-top: 1%;
+    
+}
+footer nav {
+    display:flex;
+    justify-content: space-between;
+    width: 80%;
 }
 /*END FOOTER STYLNG*/
 /*END HOME PAGE STYLING*/
 
 
 /*START ABOUT PAGE STYLING*/
-* {
-    box-sizing: border-box;
-    padding:0;
-    margin:0;
-    max-width:100%;
-}
 
-body {
-    max-width: 100%;
-}
-/*BEGIN HEADER STYLING*/
-header{
-    height:15vh;
-}
-
-nav {
-    display:flex;
-    justify-content: space-between;	
-}
-
-
-.links2 {
-    width:80%;
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top:5%;
-}
-
-
-
-nav a{
-	color: black;
-	text-decoration: none;
-}
-/*END HEADER STYLING*/
-/*BEGIN TOP CONTAINER STYLING*/
+/*BEGIN CONTAINER2 STYLING*/
 .container2{
     display:flex;
-    width: 75%;
-    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}
+
+.container2 div{
+    padding:1% 2%;
+    width:85%;
     border-bottom: 1px dashed black;
 }
-/*END TOP CONTAINER STYLING*/
-/*BEGIN MIDDLE STYLING*/
+.container2 p {
+    font-size:20px;
+    line-height: 1.5;
+    
+}
+/*END CONTAINER2 STYLING*/
+/*BEGIN CONTAINER3 STYLING*/
 h4 {
-	height:40px;
-	width:140px;
-	border:1px solid black;
+	height:6vh;
+	width:33%;;
+    border:1px solid black;
+    border-radius: 5%/50%;
 	background: white; 
     margin-top: 3%;
     display:flex; 
@@ -347,48 +333,50 @@ h4 {
     justify-content: center;
 }
 
-.middle2{
-    display:flex;
-    justify-content: space-around;
-    width:80%;
-    margin:0 auto;
-  
-}
-
 .container3 {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap:wrap;
+    margin:auto;
+    }
+    
+.cont3Img {
+    display:flex;
+    justify-content: center;
+    width:100%;
+    margin:auto;
+}
+.container3 div{
     border-bottom:1px dashed black;
-    height:500px;
-	width: 450px;
-	text-align:left;
+    width:40%; 
+    padding:1% 2%;
+    margin: 0 2%;
+}
+.container3 div p{
+    text-align:left;
+    line-height:1.5;;
+    font-size:20px;
+    
+}
+
+/*END CONTAINER3 STYLING*/
+/*BEGIN CONTAINER4 STYLING*/
+
+.container4{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container4 div{
+    padding:1% 2%;
+    width:85%;
+}
+.container4 p {
+    font-size:20px;
     line-height: 1.5;
-    
 }
 
-
-/*END MIDDLE STYLING*/
-/*BEGIN BOTTOM STYLING*/
-.bottomContainer2{
-    display:flex;
-    width: 75%;
-    margin: 0 auto;
-}
-/*END BOTTOM STYLING*/
-#footer2 {
-    background: black;
-    height: 8vh;
-    margin: 0 auto;
-    width: 80%;
-}
-
-    
-footer nav {
-    display:flex;
-    justify-content: space-around;
-    width: 80%;
-}
-
-footer nav a {
-    color: white;
-    margin-top: 2%;
-}
+/*END CONTAINER4 STYLING*/
 /*END ABOUT PAGE STYING*/
