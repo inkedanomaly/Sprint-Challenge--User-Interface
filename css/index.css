@@ -16,18 +16,12 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+
 body {
 	line-height: 1;
 }
@@ -46,9 +40,20 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+/*BEGIN HTML BODY STYLING*/
 * {
     box-sizing: border-box;
+    padding:0;
+    margin:0;
+    max-width: 100%;
+}
+
+body {
+    line-height: 2;
+}
+
+section{
+    padding: 1% 0;
 }
 
 html, body {
@@ -63,47 +68,120 @@ h1, h2, h3, h4, h5 {
 }
 
 p {
-    line-height: 1.4;
+    line-height: 2;
 }
+/*END HTML BODY STYLING*/
 
-.container {
-    width: 800px;
-    margin: 0 auto;
+/*BEGIN NAV STYLING*/
+header {
+    height:15vh;
 }
-
-.top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
-}
-
-.top-content .text-container {
-    width: 48%;
+nav {
+    display:flex;
+    justify-content:center;
     padding: 0 1%;
-    padding-bottom: 20px;  
 }
 
-.middle-content {
-    margin-bottom: 20px;
+.logo {
+    margin: auto;
+    padding-top:1%;
+    padding-left: 7%;
+}    
+
+.linksHeader {
+    width:80%;
+    padding-top: 3%;
+    display:flex;
+    justify-content:space-evenly;
+}
+nav a{
+    color: black;
+	text-decoration: none;
+}
+/*THIS CLOSES NAV STYLING*/
+/*THIS OPENS MAIN BACKGROUND IMAGE STYLING */
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box img {
+    width:85%;
+}
+/*THIS CLOSES MAIN BACKGROUND IMAGE STYLING *?
+/*END HEADER STYLING*/
+
+/*BEGIN TOP CONTENT STYLING*/
+.homeContainer {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    margin:1% 0;
+}
+
+.homeContainer div {
+    width:42%; 
+    padding:0 1% ;
+}
+
+.homeContainer p {
+    text-align:left;
+    line-height:2;  
+}
+/*END TOP CONTENT STYLING*/
+
+/*BEGIN MIDDLE CONTENT STYLING*/
+.boxDiv {
+    border-top: 1px dashed black;
     border-bottom: 1px dashed black;
+    width:90%;
+    margin:0 4%;
+    padding:1% 0;
 }
-
-.middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
+.boxDiv h2 {
+    padding-left: 4%;;
 }
-
-.middle-content .boxes {
+.boxDiv .boxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
 }
 
-.middle-content .boxes .box {
+.boxDiv .boxes .box1 {
     width: 12.5%;
-    height: 100px;
+    height: 125px;
+    background: teal;
+    margin: 20px 2.5%; 
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxDiv .boxes .box2 {
+    width: 12.5%;
+    height: 125px;
+    background: gold;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxDiv .boxes .box3 {
+    width: 12.5%;
+    height: 125px;
+    background: cadetblue;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxDiv .boxes .box3 {
+    width: 12.5%;
+    height: 125px;
     background: black;
     margin: 20px 2.5%;
     color: white;
@@ -111,36 +189,202 @@ p {
     align-items: center;
     justify-content: center;
 }
-
-.bottom-content {
-    display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
-}
-
-.bottom-content .text-container {
-    padding-right: 4%;
-}
-
-.bottom-content .text-container:last-child {
-    padding-right: 0;
-}
-
-footer {
-    width: 100%;
-    background: black;
-}
-
-footer nav {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
-}
-
-footer nav a {
+.boxDiv .boxes .box4 {
+    width: 12.5%;
+    height: 125px;
+    background: coral;
+    margin: 20px 2.5%;
     color: white;
-    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.boxDiv .boxes .box5 {
+    width: 12.5%;
+    height: 125px;
+    background: crimson;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxDiv .boxes .box6 {
+    width: 12.5%;
+    height: 125px;
+    background: forestgreen;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxDiv .boxes .box7 {
+    width: 12.5%;
+    height: 125px;
+    background: darkorchid;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxDiv .boxes .box8 {
+    width: 12.5%;
+    height: 125px;
+    background: hotpink;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxDiv .boxes .box9 {
+    width: 12.5%;
+    height: 125px;
+    background: indigo;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxDiv .boxes .box10 {
+    width: 12.5%;
+    height: 125px;
+    background: dodgerblue;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*END MIDDLE CONTENT STYLING*/
+
+/*BEGIN homeContainer2 STYLING*/
+.homeContainer2 {
+    display: flex;
+    justify-content: center;
+}
+
+.homeContainer2 div {
+    width: 30%;
+    padding: 0 3%;
+    margin-bottom:1%;
+}
+.homeContainer2 p{ 
+    text-align:left;
+	line-height: 2;
+}
+/*END BOTTOM CONTENT STYLING*/
+
+/*BEGIN FOOTER STYLING*/
+footer {
+    background: black;
+    height: 8vh;
+    width:90%;
+    margin:auto;
+}
+footer nav a {
+    color: white; 
+    padding-top: 1%;
+    
+}
+footer nav {
+    display:flex;
+    justify-content: space-between;
+    width: 80%;
+}
+/*END FOOTER STYLNG*/
+/*END HOME PAGE STYLING*/
+
+
+/*START ABOUT PAGE STYLING*/
+
+/*BEGIN CONTAINER2 STYLING*/
+.container2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}
+
+.container2 div{
+    padding:0 2%;
+    padding-bottom: 2%;
+    width:85%;
+    border-bottom: 1px dashed black;
+}
+.container2 p {
+    font-size:20px;
+    line-height: 1.5;
+}
+.container2 h2 {
+    font-size:21px;
+}
+/*END CONTAINER2 STYLING*/
+/*BEGIN CONTAINER3 STYLING*/
+h4 {
+	height:6vh;
+	width:33%;;
+    border:1px solid black;
+    border-radius: 5%/50%;
+	background: white; 
+    margin-top: 3%;
+    display:flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.container3 {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap:wrap;
+    margin:auto;
+    }
+.container3 h3 {
+    font-size:21px;
+}
+.cont3Img {
+    display:flex;
+    justify-content: center;
+    width:100%;
+    margin:auto;
+}
+.container3 div{
+    border-bottom:1px dashed black;
+    width:40%; 
+    padding:1% 2%;
+    margin: 0 2%;
+}
+.container3 div p{
+    text-align:left;
+    line-height:1.5;;
+    font-size:20px;
+    
+}
+
+/*END CONTAINER3 STYLING*/
+/*BEGIN CONTAINER4 STYLING*/
+
+.container4{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container4 div{
+    padding:0 2%;
+    padding-bottom: 1%;
+    width:85%;
+}
+.container4 p {
+    font-size:20px;
+    line-height: 1.5;
+}
+.container4 h3 {
+    font-size:21px;
+}
+/*END CONTAINER4 STYLING*/
+/*END ABOUT PAGE STYING*/
